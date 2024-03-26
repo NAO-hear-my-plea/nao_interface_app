@@ -1,0 +1,13 @@
+Your task is to write uniq_sum function defined in the file task.py
+This function takes two lists as arguments, and should return only UNIQUE values from both lists (without any duplicates)
+as a list. Returned list should also be sorted numerically (i.e. 2 should be on position before 3, etc.)
+See examples if in doubt. 
+
+To test your solution, run 'python -m unittest task.py' from the command line (or bash, if you use mac/linux)
+
+When finished, push the whole repository on github. Example:
+'git add .'
+'git commit -m 'your message'
+'git push origin main'
+
+
