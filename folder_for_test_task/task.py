@@ -2,18 +2,19 @@ import unittest
 
 
 def uniq_sum(list1, list2) -> list:
-    unique = []
-    list = list1 + list2
-    for el in list:
-        if list.count(el) <= 1:
-            unique.append(el)
-        else:
-            if el not in unique:
-                unique.append(el)
-
-    unique.sort()
-
-    return unique
+    return sorted(list(set(list1 + list2)))
+    # unique = []
+    # list = list1 + list2
+    # for el in list:
+    #     if list.count(el) <= 1:
+    #         unique.append(el)
+    #     else:
+    #         if el not in unique:
+    #             unique.append(el)
+    #
+    # unique.sort()
+    #
+    # return unique
 
 class TestUniqSum(unittest.TestCase):
     def test_uniq_sum(self):
